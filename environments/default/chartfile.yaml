@@ -1,0 +1,13 @@
+directory: charts
+repositories:
+- name: stable
+  url: https://charts.helm.sh/stable
+- name: grafana
+  url: https://grafana.github.io/helm-charts
+- name: ealenn
+  url: https://ealenn.github.io/charts
+requires:
+- chart: ealenn/echo-server
+  directory: echo-server-0.5.0
+  version: 0.5.0
+version: 1
